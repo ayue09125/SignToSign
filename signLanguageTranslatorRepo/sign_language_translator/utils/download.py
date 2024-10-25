@@ -79,7 +79,7 @@ def download(
                     unit="chunk",
                 )
 
-            start_time = time()
+            start_time = time() - 0.1 # subtract by 0.1 to avoid float division by 0 
             speed = 0
             saved = 0
             # download & write
